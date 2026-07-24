@@ -26,12 +26,14 @@ public class Main extends Application {
         stage.setTitle("Sistema de Gestión de Empleados");
         EmpleadoView vista = new EmpleadoView();
         new EmpleadoController(vista);
-        TabPane raiz = vista.getTabPane();
+        TabPane raiz = vista.getPanelPestana();
         Scene escena = new Scene(raiz, 450, 600);
         
         stage.setScene(escena);
         stage.setResizable(false);
         stage.show();
     }
+    
+    
     }
     
